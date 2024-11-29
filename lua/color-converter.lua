@@ -261,9 +261,9 @@ M.cycle = function()
 	if current_line:find('rgb') then
 		from_RGB_to_HSL(current_line)
 	elseif current_line:find('#%w+') then
-		from_Hex_to_RGB(current_line)
+		from_Hex_to_HSL(current_line)
 	elseif current_line:find('hsl') then
-		from_HSL_to_Hex(current_line)
+		from_HSL_to_RGB(current_line)
 	end
 end
 
